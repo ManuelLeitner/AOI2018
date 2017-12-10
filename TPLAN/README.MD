@@ -1,6 +1,3 @@
-```
-Erste Qualifikation 2017/18 TPLAN • v1.
-```
 # Trainingsplan
 
 Arthur hat beschlossen etwas f ̈ur seine Figur zu tun und ins Fitnessstudio zu gehen. Das
