@@ -10,7 +10,7 @@ also das Fitnessstudio besucht, arbeitet er diese _m_ Schritte der Reihe nach ab
 
 Jeder Schritt ist entweder eine _Ubungsphase ̈_ oder eine _Wiederholungsphase_ :
 
-- ̈Ubungsphase: Arthur trainiert an jedem Ger ̈at im Intervall [ _l, r_ ]. Das heißt er ̈ubt
+- Übungsphase: Arthur trainiert an jedem Ger ̈at im Intervall [ _l, r_ ]. Das heißt er ̈ubt
     mit den Ger ̈aten Nummer _l, l_ + 1 _,... r_ − 1 _, r_ jeweils _einmal_.
 - Wiederholungsphase: Sein Freund weiß, dass eine einzige Wiederholung an den
     Ger ̈aten wohl nicht gen ̈ugen wird. Deshalb gilt es in dieser Phase alle Schritte im Inter-
