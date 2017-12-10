@@ -131,7 +131,7 @@ mit dem Rand zusammen. Der Ausgang befindet am Gestein anliegend. Z. B.:
 **Subtask 4 (16 Punkte):** Alles Gestein im inneren der Höhle hängt (direkt oder indirekt)
 mit dem Rand zusammen. Z. B.:
 
-
+```
 ### #############
 
 ### #...........#
@@ -145,6 +145,7 @@ mit dem Rand zusammen. Z. B.:
 ### #....#..#...#
 
 ### #############
+```
 
 **Subtask 5 (43 Punkte):** Keine Einschränkungen. Z. B.:
 
