@@ -50,7 +50,7 @@ Eingabe Ausgabe
 ```
 ### 3 3 2 5 3
 
-Im ersten Schritt trainiert Arthur an Ger ̈at 1 und 2 einmal, im zweiten mit Ger ̈at 4 und 5.
+Im ersten Schritt trainiert Arthur an Ger ̈at 1 und 2 einmal, im zweiten mit Gerät 4 und 5.
 Der dritte Schritt wiederholt die ersten Beiden. Somit ist zu diesem Zeitpunkt jedes Ger ̈at,
 außer das Dritte, zweimal benutzt worden. Im vierten Schritt trainiert er an Ger ̈at 3 und
 
@@ -63,7 +63,7 @@ Allgemein gilt:
 
 - 1 ≤ _n, m_ ≤ 105
 - 1 ≤ _t_ ≤ 2
-- 1 ≤ _l_ ≤ _r_ ≤ _n_ beiUbungsphasen ̈
+- 1 ≤ _l_ ≤ _r_ ≤ _n_ bei Übungsphasen
 - 1 ≤ _l_ ≤ _r_ ≤ _m_ bei Wiederholungsphasen
 - _r_ ist bei Wiederholungsphasen _kleiner_ als die Nummer des aktuellen Schrittes. Er
     wiederholt also tats ̈achlich nur Schritte, die er schon gemacht hat. Somit ist die erste
