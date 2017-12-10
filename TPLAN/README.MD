@@ -1,16 +1,15 @@
 # Trainingsplan
 
-Arthur hat beschlossen etwas fur seine Figur zu tun und ins Fitnessstudio zu gehen. Das Fitnessstudio bietet insgesamt _n_ verschiedene Geräte zum Trainieren an. Diese sind von 1 bis
-_n_ durchnummeriert.
+Arthur hat beschlossen etwas für seine Figur zu tun und ins Fitnessstudio zu gehen. Das Fitnessstudio bietet insgesamt _n_ verschiedene Geräte zum Trainieren an. Diese sind von 1 bis _n_ durchnummeriert.
 
 Einer seiner Freunde hat ihm sogar einen Trainingsplan zusammengestellt, welcher aus _m_ Schritten besteht. Die Schritte sind genauso von 1 bis _m_ durchnummeriert. Wenn er nun also das Fitnessstudio besucht, arbeitet er diese _m_ Schritte der Reihe nach ab.
 
-Jeder Schritt ist entweder eine _Ubungsphase ̈_ oder eine _Wiederholungsphase_ :
+Jeder Schritt ist entweder eine _Übungsphase_ oder eine _Wiederholungsphase_ :
 
 - Übungsphase: Arthur trainiert an jedem Gerät im Intervall [ _l, r_ ]. Das heißt er übt mit den Geräten Nummer _l, l_ + 1 _,... r_ − 1 _, r_ jeweils _einmal_.
-- Wiederholungsphase: Sein Freund weiß, dass eine einzige Wiederholung an den Geräten wohl nicht genugen wird. Deshalb gilt es in dieser Phase alle Schritte im Inter     vall [ _l, r_ ] noch einmal zu wiederholen. Diese Schritte liegen naturlich _vor_ dem aktuellen Schritt, da sie ja wiederholt werden. Sollte bei diesen eine weitere Wiederholungsphase dabei sein, so wiederholt Arthur diese auch.
+- Wiederholungsphase: Sein Freund weiß, dass eine einzige Wiederholung an den Geräten wohl nicht genugen wird. Deshalb gilt es in dieser Phase alle Schritte im Intervall [ _l, r_ ] noch einmal zu wiederholen. Diese Schritte liegen naturlich _vor_ dem aktuellen Schritt, da sie ja wiederholt werden. Sollte bei diesen eine weitere Wiederholungsphase dabei sein, so wiederholt Arthur diese auch.
 
-All dieses Training macht Arthur schwer zu schaffen. Er ist der Meinung, dass sein Freund es mit dem Trainingsplan etwas zu gut gemeint hat. Leider hat er aber mit all den Wieder holungen schon denUberblick verloren. Kannst du Arthur helfen und herausfinden, wie öfter an jedem Gerät trainiert hat? Diese Werte können potentiell (wie er schon vermutet hat) ziemlich groß werden. Gib sie deshalb _modulo_ 10^9 + 7 (1000000007) aus.
+All dieses Training macht Arthur schwer zu schaffen. Er ist der Meinung, dass sein Freund es mit dem Trainingsplan etwas zu gut gemeint hat. Leider hat er aber mit all den Wieder holungen schon den Überblick verloren. Kannst du Arthur helfen und herausfinden, wie oft er an jedem Gerät trainiert hat? Diese Werte können potentiell (wie er schon vermutet hat) ziemlich groß werden. Gib sie deshalb _modulo_ 10^9 + 7 (1000000007) aus.
 
 ## Eingabe
 
@@ -63,7 +62,7 @@ Allgemein gilt:
 
 ## Hinweis Modulo
 
-Wenn Werte zu groß werden können, dann muss man diese bei Programmierwettbewerben oft modulo (Divisionsrest, der % Operator in C++/Java) einer großen (Prim-)Zahl ausgeben. Dies soll die Aufgabe nicht schwieriger machen. Ganz im Gegenteil, der Grund dafur ist, dass man so beim Berechnen keineBigInteger(Datentypen mit mehr als 64 Bit) benötigt. Es gilt:
+Wenn Werte zu groß werden können, dann muss man diese bei Programmierwettbewerben oft modulo (Divisionsrest, der % Operator in C++/Java) einer großen (Prim-)Zahl ausgeben. Dies soll die Aufgabe nicht schwieriger machen. Ganz im Gegenteil, der Grund dafur ist, dass man so beim Berechnen keine BigInteger(Datentypen mit mehr als 64 Bit) benötigt. Es gilt:
 
 ( _a_ + _b_ ) % _c_ = (( _a_ % _c_ ) + ( _b_ % _c_ )) % _c_ (1)
 
@@ -74,7 +73,7 @@ Auch multiplizieren ist funktioniert so:
 ```
 ( a · b ) % c = (( a % c ) · ( b % c )) % c (2)
 ```
-Ahnlich beim Subtrahieren: ̈
+Ähnlich beim Subtrahieren:
 
 ```
 ( a − b ) % c = (( a % c ) − ( b % c ) + c ) % c (3)
@@ -86,11 +85,11 @@ Dividieren ist etwas komplizierter und wird zum Lösen dieser Aufgabe nicht zwin
 Diese Gleichungen erlauben es, dass man schon bei den Zwischenschritten modulo rechnet,
 und so nie einen Overflow produziert.
 
-Zum Beispiel: _Berechne das Produkt aller Elemente eines Arraysa, mit Längen- modulo_
-106_. Es gilt:_ 1 ≤ _n_ ≤ 1000 _,_ 1 ≤ _ai_ ≤ 1000
+Zum Beispiel: _Berechne das Produkt aller Elemente eines Arrays, mit Längen- modulo_
+10^6_. Es gilt:_ 1 ≤ _n_ ≤ 1000 _,_ 1 ≤ _ai_ ≤ 1000
 
-Ein 32-Bit Datentyp wie (zumindest auf den meisten Systemen) intkann Werte bis zu
-231 −1 = 2147483647, also etwasuber zwei Milliarden (2· 109 ), speichern. Wenn wir in
+Ein 32-Bit Datentyp wie (zumindest auf den meisten Systemen) int kann Werte bis zu
+2^31 −1 = 2147483647, also etwasuber zwei Milliarden (2· 10^9 ), speichern. Wenn wir in
 diesem Beispiel die Werte einfach multiplizieren, dann könnte dieses Produkt bis zu 1000^1000
 
 - also weituber demintRange - groß werden. Wenn wir die Zahlen also naive multiplizieren
