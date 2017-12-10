@@ -1,21 +1,16 @@
 # Höhlenforscher
 
-Herr Dr. Rainer ist ein renommierter Wissenschaftler auf dem Gebiet der Speläologie (Höhlen-
-forschung). Sein Team und er sind gerade dabei ein neu erschlossenes Höhlensystem zu
+Herr Dr. Rainer ist ein renommierter Wissenschaftler auf dem Gebiet der Speläologie (Höhlenforschung). Sein Team und er sind gerade dabei ein neu erschlossenes Höhlensystem zu
 erkunden. Da dieses erst vor kurzem entdeckt wurde, ist nur wenigüber die Höhlen bekannt.
-Fasziniert von seiner Arbeit ist Dr. Rainer an jenem Tag besonders Tief in den Höhlen-
-komplex vorgedrungen. Erst viel zu spät wurde ihm bewusst, dass er ganz vergessen hatte,
+Fasziniert von seiner Arbeit ist Dr. Rainer an jenem Tag besonders Tief in den Höhlenkomplex vorgedrungen. Erst viel zu spät wurde ihm bewusst, dass er ganz vergessen hatte,
 sich den Weg zurück zu merken. Wie er nun je wieder hinaus finden soll, ist ihm ein Rätsel.
 
-Was die ganze Situation noch schlimmer macht ist, dass seine Forschungsgelder knapp be-
-messen sind. Deshalb besitzt Dr. Rainer anstatt einer professionellen Stirnlampe (oder
-Funkgeräten, um seine Kollegen zu kontaktieren) nur eine kleine Taschenlampe, deren Bat-
-terie schon dem Ende zugeht. Mehr ist im Budget einfach nicht drinnen.
+Was die ganze Situation noch schlimmer macht ist, dass seine Forschungsgelder knapp bemessen sind. Deshalb besitzt Dr. Rainer anstatt einer professionellen Stirnlampe (oder
+Funkgeräten, um seine Kollegen zu kontaktieren) nur eine kleine Taschenlampe, deren Batterie schon dem Ende zugeht. Mehr ist im Budget einfach nicht drinnen.
 
 Für den Zweck dieser Aufgabe repräsentieren wir die Höhle, in der sich Dr. Rainer befindet,
 vereinfacht als _n_ × _m_ Raster. Jede Zelle dieses Rasters ist entweder begehbar (gekennzeichnet
-durch einen Punkt “.”), oder durch Gestein (“#”) geblockt. Der Rand ist dabei nie begeh-
-bar, da dieser die “Außenwände” der Höhle darstellt. Weiteres befindet sich bei genau eine
+durch einen Punkt “.”), oder durch Gestein (“#”) geblockt. Der Rand ist dabei nie begehbar, da dieser die “Außenwände” der Höhle darstellt. Weiteres befindet sich bei genau eine
 (unbekannten) Zelle der Ausgang (“X”).
 
 Dr. Rainer ist sich leider Gottes nicht sicher, wo er sich gerade befindet. Seine Taschenlampe
@@ -25,10 +20,8 @@ wenn er nicht in der Höhle erfrieren möchte.
 
 Implementiere dazu die FunktionfindExit(subtask, fieldOfView). Die Zahlsubtaskgibt
 an, um welchen Subtask es sich bei diesem Test handelt. Der ParameterfieldOfViewist
-ein 3×3 Array, das sein aktuelles Sichtfeld beschreibt. Dein Program kann Dr. Rainer kon-
-trollieren, indem esüber die Funktionenleft(),right(),up()unddown()seine Bewegung
-steuert. Diese bewegen ihn einen Schritt nach Links, Rechts, Oben bzw. Unten und aktua-
-lisieren dasfieldOfViewArray mit dem neuen Sichtfeld. Sollte ein Schritt in diese Richtung
+ein 3×3 Array, das sein aktuelles Sichtfeld beschreibt. Dein Program kann Dr. Rainer kontrollieren, indem esüber die Funktionenleft(),right(),up()unddown()seine Bewegung
+steuert. Diese bewegen ihn einen Schritt nach Links, Rechts, Oben bzw. Unten und aktualisieren dasfieldOfViewArray mit dem neuen Sichtfeld. Sollte ein Schritt in diese Richtung
 nicht möglich sein (da z.B. Gestein im Weg ist), so bleibt er auf der Stelle stehen. Sobald er
 die Zelle mit dem Ausgang betritt, wird das Program automatisch beendet und Dr. Rainer
 damit gerettet.
@@ -43,8 +36,7 @@ Rainer wohl schlecht aus - und du bekommst “Wrong Answer”. Kannst du ihm hel
 
 Das Einlesen wird bereits vom Graderübernommen. Dieser liest die Daten in folgendem
 Format ein (dies kann für dich beim lokalen Testen hilfreich sein): Die erste Zeile enthält
-Subtask Nummer, _n_ (Anzahl Zeilen), _m_ (Anzahl Spalten) - in dieser Reihenfolge. Die folgen-
-den _n_ Zeilen beschreiben die Höhle. “#” steht dabei für Gestein, “.” für eine leere Zelle, “S”
+Subtask Nummer, _n_ (Anzahl Zeilen), _m_ (Anzahl Spalten) - in dieser Reihenfolge. Die folgenden _n_ Zeilen beschreiben die Höhle. “#” steht dabei für Gestein, “.” für eine leere Zelle, “S”
 für die Startposition und “X” für den Ausgang.
 
 ## Beispiel
