@@ -22,11 +22,11 @@ All dieses Training macht Arthur schwer zu schaffen. Er ist der Meinung, dass se
 es mit dem Trainingsplan etwas zu gut gemeint hat. Leider hat er aber mit all den Wieder-
 holungen schon denUberblick verloren. Kannst du Arthur helfen und herausfinden, wie oft ̈
 er an jedem Ger ̈at trainiert hat? Diese Werte k ̈onnen potentiell (wie er schon vermutet hat)
-ziemlich groß werden. Gib sie deshalb _modulo_ 109 + 7 (1000000007) aus.
+ziemlich groß werden. Gib sie deshalb _modulo_ 10^9 + 7 (1000000007) aus.
 
 ## Eingabe
 
-Die erste Zeile des Inputs enth ̈alt zwei Zahlen _n_ und _m_ , die Anzahl an Ger ̈ate und die Anzahl
+Die erste Zeile des Inputs enthält zwei Zahlen _n_ und _m_ , die Anzahl an Ger ̈ate und die Anzahl
 an Schritte des Trainingsplans. Die n ̈achsten _m_ Zeilen enthalten jeweils drei Zahlen _t l r_ , die
 die einzelnen Schritte beschreiben. _t_ = 1 bedeutet, dass es sich um eineUbungsphase han- ̈
 delt, _t_ = 2 hingegen kennzeichnet eine Wiederholungsphase. _l r_ beschreibt das dazugeh ̈orige
@@ -34,13 +34,9 @@ Intervall.
 
 ## Ausgabe
 
-Gib _n_ Zahlen aus, die Anzahl an Wiederholungen, die er an jedem Ger ̈at macht - modulo
+Gib _n_ Zahlen aus, die Anzahl an Wiederholungen, die er an jedem Gerät macht - modulo
 109 + 7 (1000000007).
 
-
-```
-Erste Qualifikation 2017/18 TPLAN • v1.
-```
 ## Beispiel
 
 ```
@@ -81,16 +77,12 @@ Allgemein gilt:
 
 **Subtask 4 (25 Punkte):** _n, m_ ≤ 1000
 
-**Subtask 5 (40 Punkte):** Keine Einschr ̈ankungen
+**Subtask 5 (40 Punkte):** Keine Einschränkungen
 
-## Beschr ̈ankungen
+## Beschränkungen
 
 **Zeitlimit:** 1 s **Speicherlimit:** 256 MB
 
-
-```
-Erste Qualifikation 2017/18 TPLAN • v1.
-```
 ## Hinweis Modulo
 
 Wenn Werte zu groß werden k ̈onnen, dann muss man diese bei Programmierwettbewerben
@@ -130,13 +122,13 @@ diesem Beispiel die Werte einfach multiplizieren, dann k ̈onnte dieses Produkt 
 und dann modulo Rechnen, dann entsteht ein Overflow. Deshalb kommt der Modulo ins
 Spiel:
 
-Durch Gleichung (2) wissen wir, dass wir einfach zwischendurch modulo rechnen d ̈urfen, und
-das Ergebnis dadurch nicht ver ̈andert wird:
+Durch Gleichung (2) wissen wir, dass wir einfach zwischendurch modulo rechnen dürfen, und
+das Ergebnis dadurch nicht verändert wird:
 
 ```
-i n t p r o d u c t = 1 ;
-f o r ( i n t i = 0 ; i < n ; i ++)
-p r o d u c t = ( p r o d u c t ∗ a [ i ] ) % 1 0 0 0 0 0 0 ;
+int product = 1 ;
+for ( int i = 0 ; i < n ; i++)
+product = ( product ∗ a[i] ) % 1000000 ;
 ```
 Wenn wir modulo _x_ rechnen, dann ist das Ergebnis zwischen 0 und _x_ −1 (es ist ja immerhin
 der Rest). Somit kann das Produkt (product∗a[ i ]) maximal (1000000−1)· 1000 _<_ 109 groß
